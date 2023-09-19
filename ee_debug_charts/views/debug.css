@@ -1,0 +1,113 @@
+.ee-debugger .debug-chart {
+	margin: 30px 0 30px 0;
+	background: var(--ee-panel-bg);
+	padding: 20px;
+	border: var(--ee-panel-border);
+}
+.ee-debugger .debug-content .var-list li {
+	font-weight:400;
+}
+.ee-debugger .ee-debugger__title {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ee-debugger .debug-content ul.query-list {
+}
+.ee-debugger .debug-expander {
+	position: relative;
+	padding-top: 50px;
+}
+.ee-debugger .debug-expander {
+	display: none;
+	height: 0;
+}
+.ee-debugger .debug-expander.expanded {
+	display: block !important;
+	height: auto !important;
+}
+.ee-debugger .debug-content-wrapper {
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+	border-bottom: 3px dotted var(--ee-button-secondary-alt-border);
+}
+.ee-debugger .debug-content-wrapper h2 {
+	display: block;
+	text-align: left;
+	border: 1px solid var(--ee-button-secondary-alt-border);
+	border-radius: 3px;
+	padding: 16px 30px !important;
+	margin: 0 0 20px 0;
+	cursor: pointer;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 100%;
+	font-size: 18px;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.ee-debugger .debug-content-wrapper h2 .chevron {
+	margin-left: -0.25em;
+}
+.ee-debugger .debug-expander .debug-sort-buttons {
+	display: inline-block;
+	margin: 10px 0 10px 10px;
+	font-size: 14px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.ee-debugger .debug-content li.selected {
+	position: relative;
+	outline: 4px solid #ff6666;
+}
+.ee-debugger .debug-content li .back-to-chart {
+	display: none;
+}
+.ee-debugger .debug-content li.selected .back-to-chart {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #ff6666;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1em;
+	opacity: .5;
+}
+.ee-debugger .debug-content li.selected .back-to-chart:hover {
+	opacity: 1;
+}
+.ee-debugger .chevron {
+	vertical-align: middle;
+	display: inline-flex;
+	margin: 0 0.25em;
+	width: 0.75em;
+}
+.ee-debugger .chevron::before {
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+.ee-debugger .chevron.right:before {
+	left: 0;
+	transform: rotate(45deg);
+}
+.ee-debugger .chevron.bottom:before {
+	top: -0.25em;
+	transform: rotate(135deg);
+}
+.ee-debugger .chevron.left:before {
+	left: 0.25em;
+	transform: rotate(-135deg);
+}
